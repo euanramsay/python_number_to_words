@@ -9,7 +9,7 @@ def section_numbers(number):
 	second = sub_sections.decide_sections(thousands)
 	third = sub_sections.decide_sections(sub_thousands)
 
-	if (first or second) and (sub_thousands < 100):
+	if (first or second) and (sub_thousands < 100) and (sub_thousands != 0):
 		small_and = "and "
 	else:
 		small_and = ""
