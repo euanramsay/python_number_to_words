@@ -9,7 +9,3 @@ small_numbers = [
 medium_numbers = [
 "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"
 ]
-
-large_number = [
-"hundred", "thousand", "million"
-]

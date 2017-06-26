@@ -3,7 +3,33 @@ import convert
 
 number = input("What number would you like to convert to words? ")
 
-print convert.number_to_words(number)
+
+millions = number / 1000000
+sub_thousands = number % 1000
+thousands = (number % 1000000 - sub_thousands) / 1000
+
+if millions == 0:
+	first = ""
+else:
+	first = convert.number_to_words(millions)
+
+if thousands == 0:
+	second = ""
+else:
+	second = convert.number_to_words(thousands)
+
+if sub_thousands == 0:
+	third = ""
+else:
+	third = convert.number_to_words(sub_thousands)
+
+
+print millions
+print thousands
+print sub_thousands
+print first + " million " + second + " thousand " + third
+
+# print convert.number_to_words(number)
 
 # def number_to_word(number):
 
