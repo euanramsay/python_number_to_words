@@ -1,4 +1,4 @@
-import convert
+import sub_sections
 
 
 number = input("What number would you like to convert to words? ")
@@ -8,26 +8,21 @@ millions = number / 1000000
 sub_thousands = number % 1000
 thousands = (number % 1000000 - sub_thousands) / 1000
 
-if millions == 0:
-	first = ""
+first = sub_sections.decide_sections(millions)
+second = sub_sections.decide_sections(thousands)
+third = sub_sections.decide_sections(sub_thousands)
+
+if first:
+	million = " million "
 else:
-	first = convert.number_to_words(millions)
+	million = ""
 
-if thousands == 0:
-	second = ""
+if second:
+	thousand = " thousand "
 else:
-	second = convert.number_to_words(thousands)
+	thousand = ""
 
-if sub_thousands == 0:
-	third = ""
-else:
-	third = convert.number_to_words(sub_thousands)
-
-
-print millions
-print thousands
-print sub_thousands
-print first + " million " + second + " thousand " + third
+print first + million + second + thousand + third
 
 # print convert.number_to_words(number)
 
