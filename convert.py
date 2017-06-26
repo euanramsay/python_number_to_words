@@ -2,11 +2,7 @@ import words
 
 def number_to_words(number):
   
-    if number == 0:
-        return "Your number is zero"
-    elif number < 0:
-        return "Sorry, negative numbers are not allowed"
-    elif 1 <= number <= 19:
+    if 1 <= number <= 19:
         return words.small_numbers[number-1]
     elif 20 <= number <= 99:
         string = str(number)
