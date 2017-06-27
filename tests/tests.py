@@ -39,6 +39,9 @@ class TestStringMethods(unittest.TestCase):
     def test_convert_a_number_with_decimal_point(self):
         self.assertEqual(convert_input.convert_input_number("5.6"), "invalid")
 
+    def test_convert_symbols(self):
+        self.assertEqual(convert_input.convert_input_number(">>>>"), "invalid")
+
     
 
 if __name__ == '__main__':

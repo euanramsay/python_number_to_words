@@ -7,8 +7,9 @@ def convert_input_number(raw_number):
 	to int if there if an error 'invalid' is output.
 	If number is 0, 'zero' is output.
 	If number is negtive or over the limit of 999,999,999 "invalid" is output.
-	If all passes calls section_numbers function on the number. 
+	If all passes calls section_numbers function on the number.
 	"""
+	
 	try:
 		number = int(raw_number)
 	except:
@@ -88,4 +89,3 @@ def section_numbers(number):
 		thousand = ""
 
 	return first + million + second + thousand + small_and + third
-	
