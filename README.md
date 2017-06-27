@@ -5,7 +5,7 @@ This is a python program which takes in a number in digits between 0 and 999,999
 e.g. input - 12, output - twelve
 input - 20500, output - twenty thousand five hundred
 
-## Method
+### Method
 
 The program uses a method of treating numbers as having 3 sections - Millions,
 Thousands and Sub-thousands. Each number entered is divided into those 3 sections.
@@ -26,6 +26,6 @@ e.g. twenty three million five hundred thousand
 
 The program is started by running input.py within the folder number_to_words
 
-### Testing
+## Testing
 
 The unit tests can be run by running the file test.py from the folder tests
