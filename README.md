@@ -10,7 +10,7 @@ input - 20500, output - twenty thousand five hundred
 The program uses a method of treating numbers as having 3 sections - Millions,
 Thousands and Sub-thousands. Each number entered is divided into those 3 sections.
 
-e.g. 230500000
+e.g. 230500000  
 Millions - 23  
 Thousands - 500  
 Sub-thousands - 0
