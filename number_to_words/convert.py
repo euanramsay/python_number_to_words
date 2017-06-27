@@ -2,7 +2,7 @@ import words
 
 def number_to_words(number):
     """
-    Takes in a number between 1 and 999 and returns the number in words
+    Takes in a number between 1 and 999 and returns the number in words.
     """
     if 1 <= number <= 19:
         return words.small_numbers[number-1]

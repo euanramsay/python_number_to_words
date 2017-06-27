@@ -1,6 +1,15 @@
 import sub_sections
 
 def section_numbers(number):
+	"""
+	Takes a number from 1 to 999,999,999 and divides it up into 3 smaller numbers.
+	One number representing the millions, one representing the thousands and one 
+	representing the sub-thousands numbers.
+	First, second and third variables are creating representing the three sections
+	of the number as it appears on the page.
+	The function then puts these strings together to create the structure of the
+	number as words.
+	"""
 	millions = number / 1000000
 	sub_thousands = number % 1000
 	thousands = (number % 1000000 - sub_thousands) / 1000

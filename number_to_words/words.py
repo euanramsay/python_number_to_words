@@ -1,3 +1,5 @@
+# Two arays containing all of the words used to represent the numbers as words
+
 small_numbers = [
 "one", 
 "two", 
