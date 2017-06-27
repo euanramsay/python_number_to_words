@@ -2,7 +2,7 @@
 
 This is a python program which takes in a number in digits between 0 and 999,999,999 and outputs the number in words.
 
-e.g. input - 12, output - twelve
+e.g. input - 12, output - twelve  
 input - 20500, output - twenty thousand five hundred
 
 ### Method
@@ -11,8 +11,8 @@ The program uses a method of treating numbers as having 3 sections - Millions,
 Thousands and Sub-thousands. Each number entered is divided into those 3 sections.
 
 e.g. 230500000
-Millions - 23
-Thousands - 500
+Millions - 23  
+Thousands - 500  
 Sub-thousands - 0
 
 Those numbers are then fed through the same algorithm to convert to words. 0 
